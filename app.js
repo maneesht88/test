@@ -13,6 +13,9 @@ res.render("frontpage.ejs");
 app.get("/about",function(req,res){
     res.render("about.ejs");
     });
+    app.get("/GALLERY",function(req,res){
+        res.render("GALLERY.ejs");
+        });
     app.get("/contact",function(req,res){
           res.render("contactus.ejs");
         });
@@ -39,6 +42,9 @@ app.get("/corec2018%2019",function(req,res){
    });
    app.get("/corec2016%2017",function(req,res){
     res.render("corecomitees/2016-2017.ejs");
+   });
+   app.get("/membership",function(req,res){
+    res.render("membership.ejs");
    });
 
    app.listen(process.env.PORT||3000,function(){console.log("Example app listening at http://localhost:3000")});
