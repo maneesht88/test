@@ -1,0 +1,101 @@
+<%-include("header.ejs")-%>
+<table style="width:100%">
+
+<tr>
+  <th>SL NO</th>
+  <th>NAME</th>
+  <th>PHONE NO</th>
+  <th>MAILID</th>
+<th>BRANCH</th>
+  <th>SEMESTER</th>
+  <th>ADMISSION NO</th>
+  <th>UNIV ROLL NUMBER</th>
+  <th>ADDRESS</th>
+  <th>PROGRAMMING KNOWLEDGE</th>
+  <th>EXPECTATIONS</th>
+
+
+</tr>
+<%for(i=0;i<fname1.length;i++){%>
+
+  <tr>
+    <td><%=i+1%></td>
+    <td><%=fname1[i]%></td>
+    <td><%=phone1[i]%></td>
+    <td><%=mail1[i]%></td>
+    <td><%=branch1[i]%></td>
+    <td><%=semester1[i]%></td>
+    <td><%=admissionNumber1[i]%></td>
+    <td><%=rollnumber1[i]%></td>
+    <td><%=address1[i]%></td>
+    <td><%=programmingKnowledge1[i]%></td>
+    <td><%=expectationClub1[i]%></td>
+
+
+</tr>
+
+<%}%>
+</table>
+<br>
+<br>
+<button style="min-height: 40px;
+width: 250px;
+border-color: transparent;
+background-color: blue;
+color: #fff;
+font-size: 15px;
+padding-bottom: 3px;
+border-width: 0;">Export HTML table to CSV file</button>
+<%-include("footer.ejs")-%>
+
+
+<script type="text/javascript">
+  function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    // CSV FILE
+    csvFile = new Blob([csv], {type: "text/csv"});
+
+    // Download link
+    downloadLink = document.createElement("a");
+
+    // File name
+    downloadLink.download = filename;
+
+    // We have to create a link to the file
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+
+    // Make sure that the link is not displayed
+    downloadLink.style.display = "none";
+
+    // Add the link to your DOM
+    document.body.appendChild(downloadLink);
+
+    // Lanzamos
+    downloadLink.click();
+}
+
+function export_table_to_csv(html, filename) {
+	var csv = [];
+	var rows = document.querySelectorAll("table tr");
+
+    for (var i = 0; i < rows.length; i++) {
+		var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+            row.push(cols[j].innerText);
+
+		csv.push(row.join(","));
+	}
+
+    // Download CSV
+    download_csv(csv.join("\n"), filename);
+}
+
+document.querySelector("button").addEventListener("click", function () {
+    var html = document.querySelector("table").outerHTML;
+	export_table_to_csv(html, "table.csv");
+});
+
+</script>

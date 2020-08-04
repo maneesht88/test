@@ -2,6 +2,7 @@
 #252a34
 #ff2e63
 #eaeaea */
+
 body{
   background-color:#eaeaea;
 }
@@ -131,4 +132,21 @@ padding: 10px;
 .bullet{
   color: red;
   height: 100px
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+
+}
+th{
+    background-color: #b2ebf2;
+}
+.stuphoto{
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }
