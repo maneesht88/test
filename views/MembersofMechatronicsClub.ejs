@@ -1,42 +1,19 @@
 <%-include("header.ejs")-%>
-<h2 style="text-align: center; background-color: #08d9d6;">APPROVED LIST OF MEMBERS</h2>
-
+<h2 style="text-align: center; background-color: #08d9d6;">MEMBERS OF MECHATRONICS CLUB</h2>
 <table class="table table-bordered" style="width:100%">
-
 <tr class="table-active">
   <th>SL NO</th>
   <th>NAME</th>
-  <th>PHONE NO</th>
-  <th>MAILID</th>
-<th>BRANCH</th>
-  <th>SEMESTER</th>
-  <th>ADMISSION NO</th>
-  <th>UNIV ROLL NUMBER</th>
-  <th>ADDRESS</th>
-  <th>PROGRAMMING KNOWLEDGE</th>
-  <th>EXPECTATIONS</th>
+  <th>BRANCH</th>
   <th>YEAR OF APPROVAL</th>
-
-
 </tr class="table-active">
 <%for(i=0;i<fname1.length;i++){%>
-
   <tr>
     <td><%=i+1%></td>
     <td><%=fname1[i]%></td>
-    <td><%=phone1[i]%></td>
-    <td><%=mail1[i]%></td>
     <td><%=branch1[i]%></td>
-    <td><%=semester1[i]%></td>
-    <td><%=admissionNumber1[i]%></td>
-    <td><%=rollnumber1[i]%></td>
-    <td><%=address1[i]%></td>
-    <td><%=programmingKnowledge1[i]%></td>
-    <td><%=expectationClub1[i]%></td>
-<td><%=aprovalyear1[i]%></td>
-
-</tr>
-
+    <td><%=aprovalyear1[i]%></td>
+    </tr>
 <%}%>
 </table>
 <br>

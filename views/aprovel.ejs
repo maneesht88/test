@@ -1,6 +1,5 @@
 <%-include("header.ejs")-%>
-<h2 style="text-align: center; background-color: #08d9d6;">APPROVED LIST OF MEMBERS</h2>
-
+<h2 style="text-align: center; background-color: #08d9d6;">STUDENTS TO BE APPROVED</h2>
 <table class="table table-bordered" style="width:100%">
 
 <tr class="table-active">
@@ -15,7 +14,11 @@
   <th>ADDRESS</th>
   <th>PROGRAMMING KNOWLEDGE</th>
   <th>EXPECTATIONS</th>
-  <th>YEAR OF APPROVAL</th>
+    <th>id</th>
+  <th>Approve</th>
+  <th>delete</th>
+
+
 
 
 </tr class="table-active">
@@ -33,7 +36,20 @@
     <td><%=address1[i]%></td>
     <td><%=programmingKnowledge1[i]%></td>
     <td><%=expectationClub1[i]%></td>
-<td><%=aprovalyear1[i]%></td>
+    <td><%=id1[i]%></td>
+
+    <td>
+      <form class="" action="/aprove" method="post">
+<button class="btn btn-dark" type="submit" name="aprove" value="<%=id1[i]%>" onChange="this.form.submit()">aprove</button>
+      </form>
+    </td>
+    <td>
+      <form class="" action="/delete" method="post">
+<button class="btn btn-dark" type="submit" name="delete" value="<%=id1[i]%>" onChange="this.form.submit()">Delete</button>
+      </form>
+    </td>
+
+
 
 </tr>
 
