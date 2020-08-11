@@ -150,3 +150,25 @@ th{
   text-align: center;
   align-content: center;
 }
+.headdd{
+padding-left: 100px;
+padding-right: 100px;
+}
+.pagelink{
+  text-decoration: none;
+  color:#252a34;
+}
+.pagelink:hover{
+  color :#ff2e63;
+}
+.img-thumbnail:hover{
+  opacity: 80%;
+}
+.black-text:hover{
+  opacity: 70%;
+}
+.padlist{
+  background-color: #eaeaea;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
