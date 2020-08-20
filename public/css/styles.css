@@ -69,11 +69,13 @@ border-radius: 20%;
 border: 3mm ridge #ff2e63;
 text-align: justify;
 padding-top: 30px;
+font-size:1vw
 }
 .rightcorosil{
   background-color: #eaeaea;
 border: 3mm ridge #ff2e63;
 padding-top: 30px;
+font-size:1vw
 
 
 }
@@ -82,13 +84,14 @@ padding-top: 30px;
   margin-right: 50px;
  align-items: center;
  text-align: justify;
-  font-size: large;
+ font-size:1vw;
 }
 .eventsss{
 border-width: thick;
 border: 5px solid #eaeaea;
-margin-top: 20px;
-padding: 10px;
+margin-top: 2%;
+padding: 2%;
+font-size:1vw
 }
 .fa {
   padding: 5px;
@@ -171,4 +174,8 @@ padding-right: 5%;
   background-color: #eaeaea;
   padding-top: 1px;
   padding-bottom: 1px;
+  font-size:1vw;
+}
+.paraactivity{
+  font-size:1.2vw;text-align: justify;padding-left:10%;padding-right: 10%;
 }
