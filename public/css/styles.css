@@ -11,38 +11,264 @@ body{
   align-items: center;
   text-align: center;
   font-weight: bold;
+
 }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 600px) {
+  h1.heading {
+    font-size: 50px;
+  }
+  h5.heading {
+    font-size: 30px;
+  }
+  h5.footerlines{
+    color:#eaeaea;
+    text-align:center;
+    font-size: 20px;
+  }
+  .marquec{
+    background-color: #ff2e63;
+    color: #eaeaea ;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px 0 px;
+    line-height: 15px;
+  }
+  .img2{
+    width: 8rem;
+    height: 8rem;
+  margin-left: 50px;
+    align-items: right;
+    text-align: right;
+    border-radius: 20%;
+  }
+  .img1{
+    width: 8rem;
+    height: 8rem;
+  align-items: right;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 20%;
+  
+  }
+  .img3{
+    width: 1.2rem;
+    height: 1.5rem;
+  align-items: right;
+  text-align: center;
+  border-radius: 20%;
+  }
+
+  h6.aimfront{
+    text-align:center;
+    font-size:1.5vw;
+     font-weight: bold;
+  }
+  .leftcorosil{
+    background-color: #eaeaea;
+  border: 3mm ridge #ff2e63;
+  text-align: justify;
+  padding-top: 30px;
+  font-size:1vw
+  }
+  .rightcorosil{
+    background-color: #eaeaea;
+  border: 3mm ridge #ff2e63;
+  padding-top: 30px;
+  font-size:1vw
+   
+  }
+  .aboutp{
+    margin-left: 120px;
+    margin-right: 50px;
+   align-items: center;
+   text-align: justify;
+   font-size:1vw;
+  }
+  p.paraactivity{
+    font-size:1.5vw;
+    text-align: justify;
+    padding-left:10%;
+    padding-right: 10%;
+    }
+    .imgactivity300{
+      width:100%;
+      height: 300px;
+    }
+    .imgactivity150{
+      width:100%;
+      height: 150px;
+    }
+    .imgactivity400{
+      width:100%;
+      height: 400px;
+    }
+    .regibuttons{
+     
+      font-size:1.2vw;
+    }
+    .btncc{
+      margin-bottom: 10px;
+    }
+    .rulestable{
+      padding-left:100px;
+      padding-right:100px;
+      text-align: justify;
+    }
+    .padlist{
+      background-color: #eaeaea;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      font-size:1vw;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    
+    }
+
+
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1.heading {
+    font-size: 16px;
+  }
+  h5.heading {
+    font-size: 5px;
+  }
+ 
+  h5.footerlines{
+    color:#eaeaea;
+    text-align:center;
+    font-size: 6px;
+  }
+  h4.frontevents{
+    font-size: 18px;
+  }
+  h6.rontevents{
+    font-size: 12px;
+  }
+  .marquec{
+    background-color: #ff2e63;
+    color: #eaeaea ;
+   padding-top: 4px;
+    margin: 0px 0px 0px 0 px;
+      }
+
+  .img2{
+    width: 3rem;
+    height: 3rem;
+  margin-left: 0px;
+    align-items: right;
+    text-align: right;
+    border-radius: 20%;
+  }
+  .img1{
+    width: 3rem;
+    height: 3rem;
+  align-items: right;
+  text-align: center;
+  margin-left: 0px;
+  border-radius: 20%;
+  
+  }
+  .img3{
+    width: 1rem;
+    height: 1rem;
+  align-items: right;
+  text-align: center;
+  border-radius: 20%;
+  }
+
+  .navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  h6.aimfront{
+    text-align:center;
+    font-size:3vw;
+     font-weight: bold;
+  }
+  .leftcorosil{
+    background-color: #eaeaea;
+  border: 1.5mm ridge #ff2e63;
+  text-align: justify;
+  font-size:2vw
+  }
+  .rightcorosil{
+    background-color: #eaeaea;
+  border: 1.5mm ridge #ff2e63;
+   font-size:2vw
+   
+  }
+  .aboutp{
+    margin-left: 5px;
+    margin-right: 5px;
+   align-items: center;
+   text-align: justify;
+   font-size:2vw;
+  }
+p.paraactivity{
+  font-size:2vw;
+  text-align: justify;
+  padding-left:10%;
+  padding-right: 10%;
+  }
+  .imgactivity300{
+    width:100%;
+    height: 100px;
+  }
+  .imgactivity150{
+    width:100%;
+    height: 50px;
+  }
+  .imgactivity400{
+    width:100%;
+    height: 150px;
+  }
+  .regibuttons{
+       font-size:2vw;
+  }
+  .btncc{
+    margin-bottom: 10px;
+  }
+  .rulestable{
+    padding-left:10px;
+    padding-right:10px;
+    text-align: justify;
+  }
+  .padlist{
+    background-color: #eaeaea;
+    font-size:2vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  th, td {
+    
+    text-align: left;
+  
+  }
+
+
+
+}
+
+
+
+
+
+
+
 .head{
   background-color:#eaeaea;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.img2{
-  width: 8rem;
-  height: 8rem;
-margin-left: 50px;
-  align-items: right;
-  text-align: right;
-  border-radius: 20%;
-}
-.img1{
-  width: 8rem;
-  height: 8rem;
-align-items: right;
-text-align: center;
-margin-left: 10px;
-border-radius: 20%;
 
-}
-.img3{
-  width: 1.2rem;
-  height: 1.5rem;
-align-items: right;
-text-align: center;
-border-radius: 20%;
-
-
-}
 .container
 {
   margin-left: 0px;
@@ -55,37 +281,9 @@ border-radius: 20%;
   align-items: center;
   text-align: center;
 }
-.marquec{
-  background-color: #ff2e63;
-  color: #eaeaea ;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin: 0px 0px 0px 0 px;
-  line-height: 15px;
-
-}
-.leftcorosil{
-  background-color: #eaeaea;
-border: 3mm ridge #ff2e63;
-text-align: justify;
-padding-top: 30px;
-font-size:1vw
-}
-.rightcorosil{
-  background-color: #eaeaea;
-border: 3mm ridge #ff2e63;
-padding-top: 30px;
-font-size:1vw
 
 
-}
-.aboutp{
-  margin-left: 150px;
-  margin-right: 50px;
- align-items: center;
- text-align: justify;
- font-size:1vw;
-}
+
 .eventsss{
 border-width: thick;
 border: 5px solid #eaeaea;
@@ -140,11 +338,7 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-th, td {
-  padding: 5px;
-  text-align: left;
 
-}
 th{
     background-color: #b2ebf2;
 }
@@ -170,12 +364,4 @@ padding-right: 5%;
 .black-text:hover{
   opacity: 70%;
 }
-.padlist{
-  background-color: #eaeaea;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  font-size:1vw;
-}
-.paraactivity{
-  font-size:1.2vw;text-align: justify;padding-left:10%;padding-right: 10%;
-}
+
