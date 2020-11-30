@@ -58,6 +58,12 @@ app.get("/about",function(req,res){
                     app.get("/activities2019%2020",function(req,res){
                         res.render("activities/2019-2020.ejs");
                         });
+                        app.get("/activities2020%2021",function(req,res){
+                          res.render("activities/2020-2021.ejs");
+                          });
+ app.get("/corec2020%2021",function(req,res){
+  res.render("corecomitees/2020-2021.ejs");
+ });
  app.get("/corec2019%2020",function(req,res){
  res.render("corecomitees/2019-2020.ejs");
 });
