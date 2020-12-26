@@ -1,0 +1,84 @@
+<%-include("header.ejs")-%>
+<script type="text/javascript">
+  
+  </script>
+<a href="#A119" ><h5 class="pagelink"><span class="bullet">&#10149;</span>PROVE US WRONG!</h5></a> 
+<h2 style="text-align: center; background-color: #08d9d6;">PROVE US WRONG!</h2>
+<table class="table table-bordered" style="width:100%">
+<tr class="table-active">
+  
+  <th>SL NO</th>
+  <th>NAME</th><th>certificate status</th>
+  <% var mm=["Johanna Esther N","Ahmad Shiras","Pooja Ajin","Aakash S D", "Rahat Khan","Afia Shanavas","Visakh Bobby","Sneha M.R","K Thomas Mathew","Swagath S", "Mahesh U S"  ,"Nikhil S Prakash"];%>
+  <% var certistatus=["Winner","Winner", "Participant","Participant","Participant","Program Co-ordinator","Program Co-ordinator" ,"Program Co-ordinator" ,"Program Co-ordinator" ,"Program Co-ordinator" ,"Program Co-ordinator" ,"Program Co-ordinator"  ];%>
+  <%for(i=0;i<mm.length;i++){%>
+  </tr class="table-active"><tr>
+  <td><%=i+1%></td><td><%=mm[i]%></td><td><%=certistatus[i]%></td>
+</tr>
+<%}%>
+
+</table>
+<br>
+<br>
+<!-- <button style="min-height: 40px;
+width: 250px;
+border-color: transparent;
+background-color: blue;
+color: #fff;
+font-size: 15px;
+padding-bottom: 3px;
+border-width: 0;">Export HTML table to CSV file</button> -->
+<%-include("footer.ejs")-%>
+
+<!-- 
+<script type="text/javascript">
+  function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    // CSV FILE
+    csvFile = new Blob([csv], {type: "text/csv"});
+
+    // Download link
+    downloadLink = document.createElement("a");
+
+    // File name
+    downloadLink.download = filename;
+
+    // We have to create a link to the file
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+
+    // Make sure that the link is not displayed
+    downloadLink.style.display = "none";
+
+    // Add the link to your DOM
+    document.body.appendChild(downloadLink);
+
+    // Lanzamos
+    downloadLink.click();
+}
+
+function export_table_to_csv(html, filename) {
+	var csv = [];
+	var rows = document.querySelectorAll("table tr");
+
+    for (var i = 0; i < rows.length; i++) {
+		var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++)
+            row.push(cols[j].innerText);
+
+		csv.push(row.join(","));
+	}
+
+    // Download CSV
+    download_csv(csv.join("\n"), filename);
+}
+
+document.querySelector("button").addEventListener("click", function () {
+    var html = document.querySelector("table").outerHTML;
+	export_table_to_csv(html, "table.csv");
+});
+
+</script>
+ -->
