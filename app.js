@@ -82,6 +82,9 @@ app.get("/corec2018%2019",function(req,res){
    app.get("/membership",function(req,res){
     res.render("membership.ejs");
    });
+   app.get("/techsnippet",function(req,res){
+    res.render("techsnippet.ejs");
+   });
 
    app.get("/membershipsss",function(req,res){
     res.render("membershipsss.ejs");
