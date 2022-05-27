@@ -61,6 +61,9 @@ app.get("/about",function(req,res){
                         app.get("/activities2020%2021",function(req,res){
                           res.render("activities/2020-2021.ejs");
                           });
+                          app.get("/activities2021%2022",function(req,res){
+                            res.render("activities/2021-2022.ejs");
+                            });
                           app.get("/participationpage",function(req,res){
                             res.render("activities/participationpage.ejs");
                             });
