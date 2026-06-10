@@ -10,8 +10,11 @@ const mongoose = require('mongoose');
 // mechatronics2020
 
 // mongodb+srv://maneesht88:maneesh@123@cluster0-wxzpv.mongodb.net/marianregidb
+// 634E7Jdu0zdSOwcl
+// mongodb+srv://marianmechatronics:634E7Jdu0zdSOwcl@cluster0.ci2td5m.mongodb.net/?appName=Cluster0
+mongoose.connect("mongodb+srv://marianmechatronics:634E7Jdu0zdSOwcl@cluster0.ci2td5m.mongodb.net/?appName=Cluster0/membershipdb", {useNewUrlParser: true, useUnifiedTopology: true});
 
-mongoose.connect("mongodb+srv://mechatronics2020:maneesh@123@mechatronicsclub.5l1zo.mongodb.net/membershipdb", {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect("mongodb+srv://mechatronics2020:maneesh@123@mechatronicsclub.5l1zo.mongodb.net/membershipdb", {useNewUrlParser: true, useUnifiedTopology: true});
 const registerSchema = {
   fname: String,
   phone: String,
